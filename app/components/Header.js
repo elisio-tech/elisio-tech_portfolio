@@ -15,10 +15,10 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center mt-24 relative">
+    <div className="flex flex-col items-center justify-center mt-26 relative">
       <div className="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition">
         <Image
-          src="/photo.png"
+          src="/user.png"
           alt="Irakli"
           width={80}
           height={80}
@@ -32,23 +32,21 @@ export default function Header() {
           Irakli Sadgobelashvili
         </h1>
 
-        <div className="flex items-center justify-center gap-2 text-zinc-500 mt-1">
-          <span className="text-md">Frontend Developer</span>
-          <BadgeCheck className="text-blue-500 w-6 h-6" />
+        <div className="flex items-center justify-center gap-2  mt-1">
+          <span className="text-md text-zinc-900">Senior Product Designer</span>
+          <BadgeCheck className="text-orange-500 w-6 h-6" />
         </div>
       </div>
 
-      <div className="flex gap-8 mt-24 bg-gray-100 p-2 rounded-xl">
+      <div className="flex gap-8 mt-18 bg-gray-100 p-1 rounded-xl">
         {tabs.map(({ name, path }) => {
-          const isActive = pathname === path;
-
           return (
             <Link
               key={path}
               href={path}
-              className={`px-6 py-2 rounded-lg text-md font-medium transition
+              className={`px-5 py-2 rounded-lg text-md font-medium transition
                 ${
-                  isActive
+                  pathname === path
                     ? "bg-white shadow text-black"
                     : "text-gray-500 hover:text-black"
                 }`}
