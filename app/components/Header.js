@@ -15,24 +15,24 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center mt-18 relative">
-      <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition">
+    <div className="flex flex-col items-center justify-center mt-24 relative">
+      <div className="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition">
         <Image
           src="/photo.png"
           alt="Irakli"
-          width={96}
-          height={96}
+          width={80}
+          height={80}
           className="object-cover"
           priority
         />
       </div>
 
       <div className="text-center mt-6">
-        <h1 className="text-2xl font-semibold text-zinc-900">
+        <h1 className="text-3xl font-semibold text-zinc-900">
           Irakli Sadgobelashvili
         </h1>
 
-        <div className="flex items-center justify-center gap-2 text-zinc-500  mt-1">
+        <div className="flex items-center justify-center gap-2 text-zinc-500 mt-1">
           <span className="text-md">Frontend Developer</span>
           <BadgeCheck className="text-blue-500 w-6 h-6" />
         </div>
