@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 
-const inter = Inter({
+const inter = Manrope({
   subsets: ["latin"],
 });
 
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-y-auto no-scrollbar">
         <Header />
         {children}
       </body>

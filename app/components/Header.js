@@ -1,5 +1,6 @@
 "use client";
 import { BadgeCheck } from "lucide-react";
+import { Lobster } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,8 +16,8 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center mt-26 relative">
-      <div className="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition">
+    <div className="flex flex-col items-center justify-center mt-26 relative ">
+      <div className="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition border-4 border-orange-200">
         <Image
           src="/user.png"
           alt="Irakli"
@@ -28,12 +29,12 @@ export default function Header() {
       </div>
 
       <div className="text-center mt-6">
-        <h1 className="text-3xl font-semibold text-zinc-900">
-          Irakli Sadgobelashvili
+        <h1 className={`text-3xl font-semibold text-zinc-900`}>
+          Elisio Augusto
         </h1>
 
         <div className="flex items-center justify-center gap-2  mt-1">
-          <span className="text-md text-zinc-900">Senior Product Designer</span>
+          <span className="text-md text-zinc-900">Frontend Developer</span>
           <BadgeCheck className="text-orange-500 w-6 h-6" />
         </div>
       </div>
